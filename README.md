@@ -3,6 +3,8 @@
 The **RamandipTaxCalculator** application calculates tax based on predefined tax bands. It consists of two parts:
 1. **Backend**: Developed using ASP.NET Core for tax calculation logic and RESTful APIs.
 2. **Frontend**: Built with Angular to provide a responsive UI for user interaction.
+   ![image](https://github.com/user-attachments/assets/2601054c-8dcb-49ce-afcb-c51dd5da692b)
+
 
 ---
 
