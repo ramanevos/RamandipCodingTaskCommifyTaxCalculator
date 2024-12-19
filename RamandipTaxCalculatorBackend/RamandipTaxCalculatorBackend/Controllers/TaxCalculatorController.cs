@@ -10,7 +10,6 @@ namespace RamandipTaxCalculatorBackend.Controllers
     {
         private readonly ITaxCalculationService _taxCalculationService;
 
-        // Constructor injection of the service
         public TaxCalculatorController(ITaxCalculationService taxCalculationService) => _taxCalculationService = taxCalculationService;
 
         [HttpPost("calculate")]
