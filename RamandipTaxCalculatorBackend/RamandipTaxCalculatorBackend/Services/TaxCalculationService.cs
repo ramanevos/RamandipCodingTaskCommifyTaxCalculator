@@ -25,19 +25,24 @@ namespace RamandipTaxCalculatorBackend.Services
             // Calculate net salary by subtracting total tax from gross salary
             decimal netSalary = salary.GrossSalary - totalTax;
 
-            // Calculate the monthly values
-            decimal grossMonthlySalary = salary.GrossSalary / 12;
-            decimal netMonthlySalary = netSalary / 12;
-            decimal monthlyTaxPaid = totalTax / 12;
+            // Calculate the monthly values and round to two decimal places
+            decimal grossMonthlySalary = Math.Round(salary.GrossSalary / 12, 2);
+            decimal netMonthlySalary = Math.Round(netSalary / 12, 2);
+            decimal monthlyTaxPaid = Math.Round(totalTax / 12, 2);
 
-            // Return the tax calculation results with all values
+            // Round the annual values to two decimal places
+            decimal roundedGrossSalary = Math.Round(salary.GrossSalary, 2);
+            decimal roundedNetSalary = Math.Round(netSalary, 2);
+            decimal roundedTotalTax = Math.Round(totalTax, 2);
+
+            // Return the tax calculation results with all values rounded to two decimal places
             return new TaxCalculationResultDto
             {
-                GrossAnnualSalary = salary.GrossSalary,
+                GrossAnnualSalary = roundedGrossSalary,
                 GrossMonthlySalary = grossMonthlySalary,
-                NetAnnualSalary = netSalary,
+                NetAnnualSalary = roundedNetSalary,
                 NetMonthlySalary = netMonthlySalary,
-                AnnualTaxPaid = totalTax,
+                AnnualTaxPaid = roundedTotalTax,
                 MonthlyTaxPaid = monthlyTaxPaid
             };
         }
