@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamandipTaxCalculatorBackend", "RamandipTaxCalculatorBackend\RamandipTaxCalculatorBackend.csproj", "{8AFFC2E1-68DD-48BC-A0D3-2B7716A97F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamandipTaxCalculatorBackend.Tests", "RamandipTaxCalculatorBackend.Tests\RamandipTaxCalculatorBackend.Tests.csproj", "{03BB0826-4227-4FAC-8D35-EACCB049F3AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFFC2E1-68DD-48BC-A0D3-2B7716A97F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFFC2E1-68DD-48BC-A0D3-2B7716A97F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFFC2E1-68DD-48BC-A0D3-2B7716A97F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFFC2E1-68DD-48BC-A0D3-2B7716A97F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BB0826-4227-4FAC-8D35-EACCB049F3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BB0826-4227-4FAC-8D35-EACCB049F3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BB0826-4227-4FAC-8D35-EACCB049F3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BB0826-4227-4FAC-8D35-EACCB049F3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

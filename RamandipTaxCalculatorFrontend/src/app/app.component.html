@@ -1,0 +1,25 @@
+<div class="app-container">
+  <!-- Logo -->
+  <header class="header">
+    <img src="/commify-logo.png" alt="App Logo" class="logo" />
+    <h1>Ramandip Commify Tax Calculator</h1>
+  </header>
+
+  <!-- Tax Input Section -->
+  <section class="content">
+    <app-salary-input
+      (calculateTax)="onCalculateTax($event)"
+      class="salary-input"
+    ></app-salary-input>
+    <app-tax-result
+      *ngIf="result"
+      [grossAnnualSalary]="result.grossAnnualSalary"
+      [grossMonthlySalary]="result.grossMonthlySalary"
+      [netAnnualSalary]="result.netAnnualSalary"
+      [netMonthlySalary]="result.netMonthlySalary"
+      [annualTaxPaid]="result.annualTaxPaid"
+      [monthlyTaxPaid]="result.monthlyTaxPaid"
+      class="tax-result"
+    ></app-tax-result>
+  </section>
+</div>

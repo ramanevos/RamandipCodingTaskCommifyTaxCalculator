@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="grossSalary">Enter Gross Annual Salary:</label>
+    <input id="grossSalary" type="number" formControlName="grossSalary" />
+    <button app-button type="submit" [disabled]="form.invalid">Calculate</button>
+  </form>
+  
